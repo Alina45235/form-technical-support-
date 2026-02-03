@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отправка сообщения | Контактная форма</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Фоновое изображение -->
+    <div class="background-overlay"></div>
+    
+    <div class="container">
+        <!-- Боковая панель с информацией -->
+        <aside class="sidebar">
+            <div class="sidebar-content">
+                <div class="logo">
+                    <i class="fas fa-comment-dots"></i>
+                    <h2>MessageFlow</h2>
+                </div>
+                
+                <div class="contact-info">
+                    <h3>Контактная информация</h3>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Адрес</h4>
+                            <p>Москва, ул. Тверская, д. 7</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Телефон</h4>
+                            <p>+7 (495) 123-45-67</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Email</h4>
+                            <p>contact@messageflow.ru</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Часы работы</h4>
+                            <p>Пн-Пт: 9:00 - 18:00</p>
+                            <p>Сб: 10:00 - 16:00</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <h3>Мы в соцсетях</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-icon telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="sidebar-footer">
+                    <p>Мы отвечаем на сообщения в течение 24 часов в рабочие дни.</p>
+                    <div class="trust-badges">
+                        <div class="badge">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Безопасно</span>
+                        </div>
+                        <div class="badge">
+                            <i class="fas fa-lock"></i>
+                            <span>Конфиденциально</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        
+        <!-- Основная область с формой -->
+        <main class="main-content">
+            <div class="form-container">
+                <!-- Заголовок формы -->
+                <div class="form-header">
+                    <h1>Отправьте нам сообщение</h1>
+                    <p>Заполните форму ниже, и мы свяжемся с вами в ближайшее время</p>
+                </div>
+                
+                <!-- Форма -->
+                <form class="contact-form">
+                    <!-- Личная информация -->
+                    <div class="form-section">
+                        <h3><i class="fas fa-user-circle"></i> Личная информация</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">
+                                    <i class="fas fa-user"></i>
+                                    Имя *
+                                </label>
+                                <div class="input-wrapper">
+                                    <input type="text" id="firstName" placeholder="Введите ваше имя" required>
+                                    <div class="input-icon">
+                                        <i class="fas fa-check-circle valid-icon"></i>
+                                        <i class="fas fa-exclamation-circle error-icon"></i>
+                                    </div>
+                                </div>
+                                <div class="input-hint">Например: Иван</div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="lastName">
+                                    <i class="fas fa-user-tag"></i>
+                                    Фамилия *
+                                </label>
+                                <div class="input-wrapper">
+                                    <input type="text" id="lastName" placeholder="Введите вашу фамилию" required>
+                                    <div class="input-icon">
+                                        <i class="fas fa-check-circle valid-icon"></i>
+                                        <i class="fas fa-exclamation-circle error-icon"></i>
+                                    </div>
+                                </div>
+                                <div class="input-hint">Например: Петров</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Контактная информация -->
+                    <div class="form-section">
+                        <h3><i class="fas fa-address-book"></i> Контактная информация</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">
+                                    <i class="fas fa-envelope"></i>
+                                    Email адрес *
+                                </label>
+                                <div class="input-wrapper">
+                                    <input type="email" id="email" placeholder="your.email@example.com" required>
+                                    <div class="input-icon">
+                                        <i class="fas fa-check-circle valid-icon"></i>
+                                        <i class="fas fa-exclamation-circle error-icon"></i>
+                                    </div>
+                                </div>
+                                <div class="input-hint">Мы отправим ответ на этот адрес</div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">
+                                    <i class="fas fa-phone"></i>
+                                    Номер телефона
+                                </label>
+                                <div class="input-wrapper">
+                                    <input type="tel" id="phone" placeholder="+7 (999) 123-45-67">
+                                    <div class="input-icon">
+                                        <i class="fas fa-check-circle valid-icon"></i>
+                                    </div>
+                                </div>
+                                <div class="input-hint">Необязательно, но желательно</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Тема сообщения -->
+                    <div class="form-section">
+                        <h3><i class="fas fa-tag"></i> Тема сообщения</h3>
+                        <div class="form-group full-width">
+                            <label for="subject">
+                                <i class="fas fa-question-circle"></i>
+                                Выберите тему *
+                            </label>
+                            <div class="select-wrapper">
+                                <select id="subject" required>
+                                    <option value="" disabled selected>Выберите тему обращения</option>
+                                    <option value="general">Общий вопрос</option>
+                                    <option value="support">Техническая поддержка</option>
+                                    <option value="billing">Вопрос по оплате</option>
+                                    <option value="partnership">Сотрудничество</option>
+                                    <option value="feedback">Обратная связь</option>
+                                    <option value="complaint">Жалоба</option>
+                                    <option value="other">Другое</option>
+                                </select>
+                                <div class="select-arrow">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="input-hint">Выберите наиболее подходящую категорию</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Текст сообщения -->
+                    <div class="form-section">
+                        <h3><i class="fas fa-edit"></i> Текст сообщения</h3>
+                        <div class="form-group full-width">
+                            <label for="message">
+                                <i class="fas fa-comment-alt"></i>
+                                Ваше сообщение *
+                            </label>
+                            <div class="textarea-wrapper">
+                                <textarea id="message" placeholder="Опишите ваш вопрос или проблему подробно..." rows="6" required></textarea>
+                                <div class="textarea-footer">
+                                    <div class="char-counter">
+                                        <span class="current-chars">0</span>
+                                        <span class="max-chars">/ 1000 символов</span>
+                                    </div>
+                                    <div class="textarea-hint">Минимум 20 символов</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Прикрепление файлов -->
+                    <div class="form-section">
+                        <h3><i class="fas fa-paperclip"></i> Прикрепленные файлы</h3>
+                        <div class="file-upload">
+                            <div class="upload-area" id="uploadArea">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <h4>Перетащите файлы сюда или нажмите для загрузки</h4>
+                                <p>Максимальный размер файла: 5 MB. Разрешены: JPG, PNG, PDF, DOC</p>
+                                <input type="file" id="fileInput" multiple>
+                                <label for="fileInput" class="upload-button">
+                                    <i class="fas fa-folder-open"></i>
+                                    Выбрать файлы
+                                </label>
+                            </div>
+                            <div class="file-list" id="fileList">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Соглашения -->
+                    <div class="form-section">
+                        <div class="agreements">
+                            <label class="checkbox-container">
+                                <input type="checkbox" id="privacyPolicy" required>
+                                <span class="checkmark"></span>
+                                <span class="checkbox-text">
+                                    Я соглашаюсь с 
+                                    <a href="#" class="link">Политикой конфиденциальности</a>
+                                    и даю согласие на обработку персональных данных
+                                </span>
+                            </label>
+                            
+                            <label class="checkbox-container">
+                                <input type="checkbox" id="newsletter">
+                                <span class="checkmark"></span>
+                                <span class="checkbox-text">
+                                    Хочу получать новости и специальные предложения на email
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Кнопки отправки -->
+                    <div class="form-actions">
+                        <button type="button" class="btn-secondary">
+                            <i class="fas fa-times"></i>
+                            Очистить форму
+                        </button>
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Отправить сообщение
+                        </button>
+                    </div>
+                    
+                    <!-- Дополнительная информация -->
+                    <div class="form-footer">
+                        <p class="required-note">
+                            <i class="fas fa-asterisk"></i>
+                            Поля, отмеченные звездочкой (*), обязательны для заполнения
+                        </p>
+                        <div class="response-info">
+                            <div class="response-item">
+                                <i class="fas fa-bolt"></i>
+                                <div>
+                                    <h4>Быстрый ответ</h4>
+                                    <p>Среднее время ответа: 2-4 часа</p>
+                                </div>
+                            </div>
+                            <div class="response-item">
+                                <i class="fas fa-headset"></i>
+                                <div>
+                                    <h4>Поддержка 24/7</h4>
+                                    <p>Критические вопросы решаем круглосуточно</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+    
+    <!-- Стили для иконок состояния -->
+    <style>
+        .input-icon .valid-icon,
+        .input-icon .error-icon {
+            display: none;
+        }
+        
+        .form-group.success .valid-icon {
+            display: block;
+            color: #10b981;
+        }
+        
+        .form-group.error .error-icon {
+            display: block;
+            color: #ef4444;
+        }
+    </style>
+</body>
+</html>
